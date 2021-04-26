@@ -1,0 +1,13 @@
+PROCEDURE insertion sort(VAR tab : ARRAY_OF integer[10];)
+VAR
+    i,value:integer;
+BEGIN
+   value:=tab[i-1];
+   n:=tab.length;
+   FOR i FROM 0 TO n-1 STEP 1 DO
+   IF (tab[i]<value) THEN
+      tab[i]:=value;
+      i-1:=i-2;
+   END_IF
+   END_FOR
+END
